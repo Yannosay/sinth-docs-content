@@ -1,0 +1,13 @@
+{
+  "sections": [
+    {
+      "slug": "getting-started",
+      "title": "Getting Started",
+      "order": 1,
+      "pages": [
+        { "slug": "installation", "title": "Installation", "order": 1, "description": "Install the Sinth CLI globally." },
+        { "slug": "first-project", "title": "Your First Project", "order": 2, "description": "Scaffold and run a Sinth project." }
+      ]
+    }
+  ]
+}
