@@ -1,6 +1,6 @@
 ---
-title: Instaltest
-description: Install the Sinth CLI test.
+title: Installation
+description: Install Sinth via NPM.
 ---
 
 Install the CLI once with npm:
