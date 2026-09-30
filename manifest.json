@@ -5,7 +5,7 @@
       "title": "Getting Started",
       "order": 1,
       "pages": [
-        { "slug": "installation", "title": "test", "order": 1, "description": "test" },
+        { "slug": "installation", "title": "Installation", "order": 1, "description": "Install Sinth via NPM. " },
         { "slug": "first-project", "title": "Your First Project", "order": 2, "description": "Scaffold and run a Sinth project." }
       ]
     }
