@@ -1,6 +1,6 @@
 ---
-title: Installation
-description: Install the Sinth CLI globally.
+title: Instaltest
+description: Install the Sinth CLI test.
 ---
 
 Install the CLI once with npm:
