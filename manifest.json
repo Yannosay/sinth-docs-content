@@ -5,7 +5,7 @@
       "title": "Getting Started",
       "order": 1,
       "pages": [
-        { "slug": "installation", "title": "Installation", "order": 1, "description": "Install the Sinth CLI globally." },
+        { "slug": "installation", "title": "test", "order": 1, "description": "test" },
         { "slug": "first-project", "title": "Your First Project", "order": 2, "description": "Scaffold and run a Sinth project." }
       ]
     }
