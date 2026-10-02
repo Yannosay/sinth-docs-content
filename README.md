@@ -4,7 +4,16 @@ This repo holds the official content of the Sinth Documentation.
 
 
 Wanted to visit the actual documentation page? 
-- Visit [Sinth 5 Docs](sinth.yannosay.com/docs).
+- Visit [Sinth 5 Docs](https://sinth.yannosay.com/docs).
+
+## Content and structure
+
+- [manifest.json](manifest.json) holds the overview structure of the documentation page
+- [getting-started](getting-started/) holds the actual content
+
+> [!NOTE]
+> `getting-started` & `manifest.json` both need to be in sync!
+
 
 ## Help make this documentation
 
