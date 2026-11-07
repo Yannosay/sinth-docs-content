@@ -1,22 +1,14 @@
-# Sinth Documentation Content Repository
+# Sinth Documentation Content
 
-This repo holds the official content of the Sinth Documentation.
+The pages of the [Sinth documentation](https://sinth.yannosay.com/docs).
 
+## Structure
 
-Wanted to visit the actual documentation page? 
-- Visit [Sinth 5 Docs](https://sinth.yannosay.com/docs).
+- [manifest.json](manifest.json): sections and pages in navigation order
+- `<section>/<page>.md`: one Markdown file per page, with `title` and `description` front matter
 
-## Content and structure
+The content is generated from the full reference, [DOCS.md](https://github.com/Yannosay/sinth/blob/main/DOCS.md) in the Sinth repository, which is checked against the compiler. To change the documentation, edit `DOCS.md` there and open a pull request; the site content is regenerated from it.
 
-- [manifest.json](manifest.json) holds the overview structure of the documentation page
-- [getting-started](getting-started/) holds the actual content
+## Contributing
 
-> [!NOTE]
-> `getting-started` & `manifest.json` both need to be in sync!
-
-
-## Help make this documentation
-
-Open pull requests with changed content or added content. We’ll review it, and if it’s a great addition, we’ll implement it into the Sinth Documentation. You’ll be thanked on our page!
-
-- YP Team
+Typos, unclear explanations and missing examples are all welcome. Open an issue or pull request on [Yannosay/sinth](https://github.com/Yannosay/sinth).

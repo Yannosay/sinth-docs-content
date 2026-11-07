@@ -1,79 +1,43 @@
 ---
-title: Installation
-description: Install the Sinth CLI globally via NPM.
+title: "Getting started"
+description: "Install Sinth, create a project and run the dev server."
 ---
 
-Install the CLI once with npm:
+Requirements: Node.js 18.17 or newer.
+
+```bash
+npx @yannosay/sinth create my-site
+cd my-site
+npm install
+npm run dev
+```
+
+Or install the CLI globally:
 
 ```bash
 npm install -g @yannosay/sinth
+sinth create my-site
 ```
 
-::: tip
-Why globally? Sinth Compiler (Sinth 5) is a CLI tool, meaning you should have access to it from everywhere on your PC for easier usage! (Sinth 4 and Sinth 5 will probably not work at all if installed not globally.)
-:::
+Open `http://localhost:3000`. Edit `pages/index.sinth` and save; the page updates instantly and keeps its state.
 
-Nice! Already done!
-You should see something like this:
+A complete page:
+
+```sinth
+title = "Counter"
+
+var num count = 0
+
+Main {
+  Heading(level: 1) { "Count: " + count }
+  Button(onClick: count += 1) { "Increment" }
+}
+```
+
+When you are ready:
 
 ```bash
-sinth version
-# Sinth Compiler v5.0.0
+npm run build     # optimized production build in dist/
+npm run preview   # serve dist/ locally with production headers
+npm run deploy    # deploy to Cloudflare Pages
 ```
-
-### Requirements
-
-- **Node.js** 18+ (LTS recommended)
-- **npm** 9+ (comes with Node.js)
-
-::: warning
-Sinth 5 requires Node.js 18 or higher. Older versions will fail with cryptic errors.
-:::
-
-### Verify Installation
-
-```bash
-sinth --version
-# Sinth Compiler v5.0.0
-```
-
-If you see the version, you're ready to go!
-
-### Alternative: npx (No Global Install)
-
-For quick trials without a global install:
-
-```bash
-npx @yannosay/sinth@latest init my-project
-cd my-project
-npx @yannosay/sinth dev
-```
-
-### Updating Sinth
-
-```bash
-sinth update
-# or
-npm install -g @yannosay/sinth@latest
-```
-
-The `sinth update` command checks the npm registry and updates globally if a newer version exists.
-
-### Shell Completions (Optional)
-
-Generate shell completions for faster CLI usage:
-
-```bash
-# Bash
-sinth completion bash >> ~/.bashrc
-
-# Zsh
-sinth completion zsh >> ~/.zshrc
-
-# Fish
-sinth completion fish >> ~/.config/fish/completions/sinth.fish
-```
-
-::: note
-Shell completions require Sinth 5.1+. If the command doesn't exist, update first.
-:::
